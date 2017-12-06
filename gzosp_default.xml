@@ -7,6 +7,12 @@
   <remote  name="gzosp"
            fetch="https://github.com/GZOSP" />
 
+  <default revision="refs/tags/android-8.1.0_r1"
+           remote="aosp"
+           sync-f="true"
+           sync-c="true"
+           sync-j="8" />
+
   <!-- GZOSP -->
   <!--<project path="manifest" name="manifest" remote="gzosp" />
   <project path="build/make" name="build" remote="gzosp" >

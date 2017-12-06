@@ -6,7 +6,10 @@
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-8.1.0_r1"
            remote="aosp"
+           sync-f="true"
+           sync-c="true"
            sync-j="8" />
+
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
