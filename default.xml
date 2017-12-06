@@ -78,7 +78,7 @@
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" remote="aosp" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk" remote="aosp" />
   <project path="external/donuts" name="platform/external/donuts" groups="pdk" remote="aosp" />
-  <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc,pdk-fs" remote="aosp" />
+  <!--<project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc,pdk-fs" remote="aosp" /> -->
   <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer,pdk-fs" remote="aosp" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk" remote="aosp" />
   <project path="external/drrickorang" name="platform/external/drrickorang" groups="pdk" remote="aosp" />
@@ -301,7 +301,7 @@
   <project path="frameworks/opt/chips" name="platform/frameworks/opt/chips" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <!--<project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs,pdk-fs" remote="aosp" /> -->
   <project path="frameworks/opt/inputconnectioncommon" name="platform/frameworks/opt/inputconnectioncommon" groups="pdk-fs" remote="aosp" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" remote="aosp" />
@@ -369,7 +369,7 @@
   <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" remote="aosp" />
-  <project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" remote="aosp" />
+  <!--<project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" remote="aosp" /> -->
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" remote="aosp" />
@@ -377,7 +377,7 @@
   <project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" remote="aosp" />
-  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs" remote="aosp" />
+  <!--<project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs" remote="aosp" /> -->
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" groups="apps_stk,pdk-fs" remote="aosp" />
   <project path="packages/apps/StorageManager" name="platform/packages/apps/StorageManager" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" groups="pdk-fs" remote="aosp" />
@@ -545,6 +545,12 @@
   
   <project path="development" name="platform/development" groups="developers,pdk-cw-fs,pdk-fs" remote="aosp" />
   
+  <!-- old AOSP 8.0 in case -->
+  <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc,pdk-fs" remote="aosp" revision="refs/tags/android-8.0.0_r36" />
+  <project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" remote="aosp" revision="refs/tags/android-8.0.0_r36" />
+  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs" remote="aosp" revision="refs/tags/android-8.0.0_r36" />
+  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs,pdk-fs" remote="aosp" revision="refs/tags/android-8.0.0_r36" />
+
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
   <!-- GZOSP CAF manifest -->
