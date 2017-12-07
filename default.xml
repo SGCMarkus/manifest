@@ -2,10 +2,10 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-8.1.0_r1"
-           remote="aosp"
+           fetch="https://android.googlesource.com"
+           review="https://android-review.googlesource.com/"
+	   revision="refs/tags/android-8.1.0_r1" />
+  <default remote="aosp"
            sync-f="true"
            sync-c="true"
            sync-j="8" />
@@ -60,8 +60,8 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device,pdk" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs,pdk" />
   <project path="device/google/contexthub" name="device/google/contexthub" groups="device,marlin,pdk" />
-  <!-- <project path="device/google/dragon" name="device/google/dragon" groups="device,dragon,pdk" />
-  <project path="device/google/dragon-kernel" name="device/google/dragon-kernel" groups="device,dragon,pdk" clone-depth="1" /> -->
+  <project path="device/google/dragon" name="device/google/dragon" groups="device,dragon,pdk" />
+  <project path="device/google/dragon-kernel" name="device/google/dragon-kernel" groups="device,dragon,pdk" clone-depth="1" />
   <project path="device/google/marlin" name="device/google/marlin" groups="device,marlin" />
   <project path="device/google/marlin-kernel" name="device/google/marlin-kernel" groups="device,marlin" clone-depth="1" />
   <project path="device/google/muskie" name="device/google/muskie" groups="device,muskie" />

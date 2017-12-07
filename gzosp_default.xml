@@ -7,12 +7,6 @@
   <remote  name="gzosp"
            fetch="https://github.com/GZOSP" />
 
-  <default revision="refs/tags/android-8.1.0_r1"
-           remote="aosp"
-           sync-f="true"
-           sync-c="true"
-           sync-j="8" />
-
   <!-- GZOSP -->
   <!--<project path="manifest" name="manifest" remote="gzosp" />
   <project path="build/make" name="build" remote="gzosp" >
@@ -36,18 +30,18 @@
   <!--<project path="development" name="development" groups="pdk-cw-fs,pdk-fs" remote="gzosp" /> -->
   
   
-  <project path="device/gzosp/sepolicy" name="device_gzosp_sepolicy" remote="gzosp" revision="8.0" />
+  <!-- <project path="device/gzosp/sepolicy" name="device_gzosp_sepolicy" remote="gzosp" revision="8.0" /> -->
   
-  <project path="external/connectivity" name="external_connectivity" groups="pdk" remote="gzosp" revision="8.0" />
+  <!-- <project path="external/connectivity" name="external_connectivity" groups="pdk" remote="gzosp" revision="8.0" />
   <project path="external/ebtables" name="external_ebtables" groups="pdk" remote="gzosp" revision="8.0" />
   <project path="external/exfat" name="external_exfat" remote="gzosp" revision="8.0" />
   <project path="external/fuse" name="external_fuse" remote="gzosp" revision="8.0" />
   <project path="external/htop" name="external_htop" remote="gzosp" revision="8.0" />
   <project path="external/json-c" name="external_json-c" remote="gzosp" revision="8.0" />
   <project path="external/libncurses" name="external_libncurses" remote="gzosp" revision="8.0" />
-  <project path="external/libnfc-nxp" name="external_libnfc-nxp" remote="gzosp" revision="8.0" />
+  <project path="external/libnfc-nxp" name="external_libnfc-nxp" remote="gzosp" revision="8.0" /> -->
   <!--<project path="external/mksh" name="external_mksh" groups="pdk" remote="gzosp" /> -->
-  <project path="external/nano" name="external_nano" remote="gzosp" />
+  <!-- <project path="external/nano" name="external_nano" remote="gzosp" revision="8.0" /> -->
   <!-- <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="gzosp" />
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="gzosp" /> -->
   <!-- <project path="external/selinux" name="external_selinux" groups="pdk" remote="gzosp" /> 
@@ -55,9 +49,9 @@
   
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" groups="pdk" remote="gzosp" revision="8.0" />
   
-  <project path="hardware/gzosp/interfaces" name="hardware_gzosp_interfaces" remote="gzosp" revision="8.0" >
-      <copyfile dest="hardware/gzosp/Android.bp" src="Android.bp"/>
-  </project>
+  <!-- <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="los" >
+      <copyfile dest="hardware/lineage/Android.bp" src="Android.bp"/>
+  </project> -->
   
   <!-- <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" groups="pdk" remote="gzosp" />
   <project path="hardware/interfaces" name="platform/hardware/interfaces" groups="pdk" remote="aosp" />
@@ -65,5 +59,5 @@
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" remote="aosp" />
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" remote="aosp" /> -->
 
-  <project path="vendor/gzosp" name="vendor_gzosp" remote="gzosp" revision="8.0" />
+  <!-- <project path="vendor/gzosp" name="vendor_gzosp" remote="gzosp" revision="8.0" /> -->
 </manifest>
